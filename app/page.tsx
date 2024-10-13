@@ -1,7 +1,19 @@
+import React from 'react';
+import Text from "antd/es/typography/Text";
+import { Button } from 'antd';
+import Flex from 'antd/lib/flex';
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h3>This is a simple page</h3>
+    <div className="App">
+      <Flex vertical align={'center'} justify={'center'} gap={'large'} style={{ height: '90vh' }}>
+        <Text style={{ fontSize: "75px" }}>
+          Welcome to EasyGen Analytics
+        </Text>
+        <Text style={{ fontSize: '50px' }}>
+          One place shop to view your market analytics
+        </Text>
+        <Button type="primary" size='large'>Login to View your Analytics</Button>
+      </Flex>
     </div>
   );
 }
